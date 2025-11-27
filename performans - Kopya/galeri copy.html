@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1f1f1f !important;
+        }
+
+        .nav-link {
+            color: #e0e0e0 !important;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #ffffff !important;
+        }
+
+        .gallery-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery-container h1 {
+            margin-bottom: 20px;
+        }
+
+    
+        .gallery-container .figure img {
+            width: 100%;
+            height: 200px;      
+            object-fit: cover;   
+            display: block;
+        }
+
+      
+        @media (min-width: 992px) {
+            .gallery-container .figure img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="anasayfa.html">Ana Sayfa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="galeri.html" id="yazilimciMenu" role="button" data-bs-toggle="dropdown">
+                            Ünlü Filimler
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="Whiplash.html">Whiplash</a></li>
+                            <li><a class="dropdown-item" href="Interstellar.html">Interstellar</a></li>
+                            <li><a class="dropdown-item" href="John_Wick.html">John Wick</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeri.html">Galeri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="gallery-container">
+        <h1>Galeri</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="kod-kalite-kapak.png" class="img-fluid rounded" alt="Kod ekranı">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="Memorizingcode.jpg" class="img-fluid rounded" alt="Dizüstü bilgisayar">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/galari(img)/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="img-fluid rounded" alt="Terminal">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="yazilima-ekonomik-tesvik-ana.jpg" class="img-fluid rounded" alt="Klavye">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="premium_photo-1661963874418-df1110ee39c1.jpeg" class="img-fluid rounded" alt="Sunucu rafı">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="kod-bilmeden-program-yazma-a.jpg" class="img-fluid rounded" alt="Bulut altyapısı">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="kod-yazarken-dikkat-edilmesi-gereken-10-unusur.webp" class="img-fluid rounded" alt="Robotik">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="c675ebb8964207c93130b5a8ba5dc052_t.jpeg" class="img-fluid rounded" alt="Programlama konsepti">
+                        <figcaption class="figure-caption text-center text-muted"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+ 
+    <div class="container my-4">
+        <h2 class="h4 text-center mb-3">Medya — Filimler</h2>
+        <div class="row g-3 justify-content-center">
+            <div class="col-12 col-md-4">
+                <div class="card p-3 bg-dark text-light">
+                    <h3 class="h6">Kısa MP3 (örnek)</h3>
+                    <audio id="sampleAudio" controls preload="none">
+                        <source src="audio/yazilimci_10s.mp3" type="audio/mpeg">
+                        Tarayıcınız audio etiketini desteklemiyor.
+                    </audio>
+                    <small class="text-muted d-block mt-2">Dosya: audio/yazilimci_10s.mp3 — maksimum 10s oynatılacak.</small>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card p-3 bg-dark text-light">
+                    <h3 class="h6">YouTube</h3>
+                    <div class="ratio ratio-16x9">
+          
+                        <iframe id="ytEmbed" src="https://www.youtube.com/embed/VIDEO_ID?start=30&end=40&rel=0" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <small class="text-muted d-block mt-2">Replace VIDEO_ID and start/end seconds as needed.</small>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card p-3 bg-dark text-light">
+                    <h3 class="h6">Kısa MP4 (örnek)</h3>
+                    <video id="sampleVideo" controls playsinline muted preload="metadata" class="w-100 rounded">
+                        <source src="video/clip10s.mp4" type="video/mp4">
+                        Tarayıcınız video etiketini desteklemiyor.
+                    </video>
+                    <small class="text-muted d-block mt-2">Dosya: video/clip10s.mp4 — maksimum 10s oynatılacak.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      
+        (function(){
+            const MAX_SECONDS = 10;
+            const audio = document.getElementById('sampleAudio');
+            const video = document.getElementById('sampleVideo');
+            let audioTimer = null, videoTimer = null;
+
+            function limitPlayback(media, timerRef) {
+                if (!media) return;
+                media.addEventListener('play', () => {
+                    clearTimeout(window[timerRef]);
+                    const remaining = MAX_SECONDS - Math.floor(media.currentTime);
+                    const ms = Math.max(0, remaining) * 1000;
+                    window[timerRef] = setTimeout(() => media.pause(), ms);
+                });
+                media.addEventListener('pause', () => clearTimeout(window[timerRef]));
+                media.addEventListener('seeking', () => clearTimeout(window[timerRef]));
+                media.addEventListener('ended', () => clearTimeout(window[timerRef]));
+            }
+
+            limitPlayback(audio, 'audioTimer');
+            limitPlayback(video, 'videoTimer');
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

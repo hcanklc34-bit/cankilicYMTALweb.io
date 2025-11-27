@@ -1,0 +1,63 @@
+/* Mobil öncelikli, Bootstrap ile birlikte kullanılmak üzere genel responsive düzeltmeler */
+
+/* Temel düzen */
+:root{
+    --bg:#121212;
+    --card:#161616;
+    --muted:#cfcfcf;
+}
+html,body{background:var(--bg); color:#e0e0e0; font-family: Arial, sans-serif; margin:0; padding:0;}
+.container, .content { padding-left: 1rem; padding-right: 1rem; }
+
+/* Header / navbar */
+.navbar .navbar-brand { font-size:1.05rem; }
+@media(min-width:992px){ .navbar .navbar-brand { font-size:1.25rem; } }
+
+/* Carousel: küçük ekranlarda yükseklik azalt, büyük ekranlarda artır */
+.carousel-item img,
+.carousel-item .position-relative > img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+@media (min-width:768px){
+  .carousel-item img,
+  .carousel-item .position-relative > img { height:300px; }
+}
+@media (min-width:1200px){
+  .carousel-item img,
+  .carousel-item .position-relative > img { height:350px; }
+}
+
+/* Ünlü yazılımcı kartları */
+.dev-card img { width:100%; height:140px; object-fit:cover; border-top-left-radius: .25rem; border-top-right-radius: .25rem; }
+@media(min-width:768px){ .dev-card img { height:180px; } }
+@media(min-width:992px){ .dev-card img { height:220px; } }
+
+/* Profiller sayfası - resim responsive */
+.profile-img { width:80%; max-width:320px; height:auto; object-fit:cover; display:block; margin-left:auto; margin-right:auto; }
+
+/* Galeri: tüm resimleri aynı yükseklikte tut */
+.gallery-container .figure img { width:100%; height:160px; object-fit:cover; display:block; }
+@media(min-width:992px){ .gallery-container .figure img { height:240px; } }
+
+/* Medya öğeleri */
+/* Videolar / audio ve iframe'ler responsive */
+video#sampleVideo, audio#sampleAudio { width:100%; max-width:100%; height:auto; }
+.ratio iframe { width:100%; height:100%; }
+
+/* Kartlar içi */
+.card .card-body { padding:1rem; }
+.card-title { font-size:1.05rem; margin-bottom:.5rem; }
+.card-text { font-size:.95rem; }
+
+/* Footer */
+.footer-top, .footer-bottom { padding:12px 0; font-size:0.95rem; }
+@media(min-width:768px){ .footer-top { padding:18px 0; } }
+
+/* Küçük ekranlar için dokunmatik iyileştirmeleri */
+.btn { touch-action: manipulation; }
+
+/* Gerektiğinde kaydırma önlemleri */
+img, video, iframe { max-width:100%; height:auto; }

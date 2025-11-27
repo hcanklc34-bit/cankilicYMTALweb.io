@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1f1f1f !important;
+        }
+
+        .nav-link {
+            color: #e0e0e0 !important;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #ffffff !important;
+        }
+
+        .gallery-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .gallery-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .gallery-container .figure img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="yazilimciMenu" role="button" data-bs-toggle="dropdown">
+                            Ünlü Filmler
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="Whiplash.html">Whiplash</a></li>
+                            <li><a class="dropdown-item" href="Interstellar.html">Interstellar</a></li>
+                            <li><a class="dropdown-item" href="John_Wick.html">John Wick</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeri.html">Galeri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="gallery-container">
+        <h1>Galeri</h1>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/john-wick-2.jpg" class="img-fluid rounded" alt="John Wick Poster">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/interstellar-banner.jpg" class="img-fluid rounded" alt="Interstellar Poster">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/MV5BMDFjOWFkYzktYzhhMC00NmYyLTkwY2EtYjViMDhmNzg0OGFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" class="img-fluid rounded" alt="Whiplash Poster">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/91vIHsL-zjL._AC_UF894,1000_QL80_.jpg" class="img-fluid rounded" alt="Interstellar">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/48245efefd5fa7da63ea491de52723be.webp" class="img-fluid rounded" alt="Whiplash">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/Poster.webp" class="img-fluid rounded" alt="Interstellar">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/MV5BY2Q2ZmI5ZjUtNWVhMC00YzJkLTlmYjMtY2RmZDhkNzEzYjZhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg" class="img-fluid rounded" alt="Whiplash">
+                    </figure>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <figure class="figure">
+                        <img src="/can/galari(img)/john-wick-2.jpg" class="img-fluid rounded" alt="John Wick">
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
